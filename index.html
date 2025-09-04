@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wings 'n Beans Café</title>
+
+  <!-- ✅ Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+
+  <!-- ✅ PicoCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+  <style>
+    /* ✅ Apply Poppins globally */
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
+	h1, h2, h3, hgroup {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+/* Rolling Banner Styles */
+    .rolling-banner {
+      overflow: hidden;
+      width: 100vw;
+      height: 70vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner-track {
+      display: flex;
+      width: fit-content;
+      animation: scrollBanner 80s linear infinite;
+    }
+
+    .banner-track img {
+      height: 70vh;
+      width: 100vw;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes scrollBanner {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+
+    main figure {
+      margin-top: 1rem;
+    }
+
+    /* Optional: Style tel/mail links */
+    a[href^="tel:"],
+    a[href^="mailto:"] {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <img src="images/logo.png" alt="Wings 'n Beans Logo" height="50" width="50" />
+      <li><strong>Wings 'n Beans</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔁 Rolling Banner Section -->
+  <section class="rolling-banner">
+    <div class="banner-track">
+      <img src="images/banner1.jpg" alt="Banner 1" />
+      
+      <img src="images/banner3.jpg" alt="Banner 3" />
+      <img src="images/banner4.jpg" alt="Banner 4" />
+      <img src="images/banner5.jpg" alt="Banner 5" />
+      <img src="images/banner6.jpg" alt="Banner 6" />
+      <img src="images/banner7.jpg" alt="Banner 7" />
+      <img src="images/banner8.jpg" alt="Banner 8" />
+      <img src="images/banner9.jpg" alt="Banner 9" />
+      <!-- Optional: Repeat to ensure smooth loop -->
+      
+      <img src="images/banner11.avif" alt="Banner 11" />
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="grid">
+      <figure>
+        <img src="images/logo.png" alt="Wings 'n Beans Logo" height="350" width="350" style="margin-top: 5rem;" />
+      </figure>
+      <section style="margin-bottom: 0;">
+        <hgroup>
+          <h2 id="about">Welcome to Wings 'n Beans</h2>
+          <h3>Crave it, Eat it, Repeat</h3>
+        </hgroup>
+        <p>Wings 'n Beans is a vibrant and contemporary café offering a delightful fusion of Indo-Chinese and Continental flavors, catering to both vegetarian and non-vegetarian food lovers...</p>
+
+        <h3>What We Offer</h3>
+        <p>☕ Hot & Cold Beverages – From steaming cups of comfort to icy sips of refreshment — crafted with love, served with care.</p>
+        <p>🥢 Chinese & Continental Cuisine – Savor the flavors of the world, made fresh and flavorful just for you.</p>
+        <p>💖 Every Dish, Every Sip — Made with Heart</p>
+      </section>
+    </div>
+  </main>
+
+  <section class="container" id="menu" style="margin-top: -1rem;">
+    <article>
+      <hgroup>
+        <h2>Explore Our Menu</h2>
+        <h3>Dive into a world of flavors</h3>
+      </hgroup>
+      <div class="grid">
+        <figure>
+          <img src="images/Menu.jpg" alt="Food Menu" />
+        </figure>
+        <figure>
+          <img src="images/Menu_2.jpg" alt="Food Menu 2" />
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2 id="contact">Contact & Bulk Orders</h2>
+          <h3>Make your special moments delicious</h3>
+        </hgroup>
+        <p>🎈 Planning a Celebration? We accept bulk orders for:<br>
+        🎂 Birthday Parties<br>
+        👭 Kitty Parties</p>
+        <p>
+          📞 Order Now:
+          <strong><a href="tel:9664693694">96646 93694</a></strong> /
+          <strong><a href="tel:9106739074">91067 39074</a></strong>
+        </p>
+        <p>
+          📧 Email us:
+          <strong><a href="mailto:wingsnbeans@gmail.com">wingsnbeans@gmail.com</a></strong>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  
+</body>
+</html>
